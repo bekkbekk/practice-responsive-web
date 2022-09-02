@@ -1,0 +1,122 @@
+/* fonts */
+
+@font-face {
+    font-family: 'GothicRegular';
+    src: url(../fonts/GothicA1-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'GothicBold';
+    src: url(../fonts/GothicA1-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url(../fonts/FiraSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'FiraSansBold';
+    src: url(../fonts/FiraSans-Bold.ttf);
+}
+
+/* ------------------------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+/* body {
+    height: 9000px;
+} */
+
+.container {
+    width: 85%;
+    /* max-width: 1600px; */
+    margin: 0 auto;
+    /* padding-left: 120px; */
+    /* padding-right: 120px; */ 
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    font-size: 36px;
+    color: #313131
+}
+
+.button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+
+    display: inline-block;
+    color: white;
+    background-color: #ff9fdb;
+    padding: 12px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+img {
+    /* para di sila lalampas sa containers nila */
+    max-width: 100%;
+}
+
+header {
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+
+    /* background-color: #12002f; */
+}
+
+header.is-scrolling {
+    background-color: #12002f;
+}
+
+/* header.is-scrolling .container {
+    padding-top: 14px;
+    padding-bottom: 14px;
+} */
+
+/* for navbar only */
+header .container {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    /* background: lightcoral; */
+}
+
+header .container h2 {
+    color: inherit;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-family: 'FiraSansBold';
+}
+
+header .container nav {
+    display: grid;
+    grid-gap: 18px;
+    grid-template-columns: repeat(4, auto);
+    margin: auto 0;
+}
+
+header .container nav a {
+    color: inherit;
+    font-size: 20px;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+}

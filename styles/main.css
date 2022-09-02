@@ -1,0 +1,208 @@
+main .banner {
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+    background-image: url(../images/header.jpg);
+    background-position: top right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+}
+
+main .banner::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-color: #12002F;
+    opacity: 0.8;
+}
+
+main .banner .container {
+    position: relative;
+    z-index: 1;
+}
+
+main .banner .container h1 {
+    font-size: 72px;
+    margin-bottom: 32px;
+}
+
+main .banner .container h1 span {
+    color: #ff9fdb
+}
+
+main .banner .container h3 {
+    font-size: 36px;
+    margin-bottom: 32px;
+}
+
+
+
+
+
+
+
+
+main .services {
+    background-color: #eee;
+}
+
+main .services .container {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+main .services .container .services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px;
+}
+
+main .services .container .services-grid .service {
+    background-color: #fff;
+    border-radius: 16px;
+    overflow: hidden; /* para sakop sa rounder corner yung taas */
+
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1)
+}
+
+main .services .container .services-grid .service .image-box {
+    display: block;
+    width: 100%;
+    border-bottom: 5px solid #ff9fdb;
+}
+
+main .services .container .services-grid .service .image-box .img {
+    display: block;
+    width: 100%;
+    height: 128px;
+    object-fit: cover;
+}
+
+main .services .container .services-grid .service .content {
+    padding: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+main .projects {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+main .projects .center {
+    text-align: center;
+}
+
+main .projects .project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+    margin-bottom: 32px
+}
+
+main .projects .project-grid .project {
+    background-image: url(../images/project-img.jpg);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+main .projects .project-grid .project .content {
+    opacity: 0;
+    color: #fff;
+    padding: 16px;
+    background-color: rgba(64, 39, 68, 0.8);
+
+    transition: 0.5s ease;
+}
+
+main .projects .project-grid .project .content h3 {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+main .projects .project-grid .project .content p {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+main .projects .project-grid .project .content:hover {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+main .contact {
+    background-color: #9b75d7;
+}
+
+main .contact .container {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+main .contact .container h2 {
+    color: #fff;
+}
+
+main .contact .container form {
+    display: block;
+    margin: 0 auto;
+    max-width: 680px;
+}
+
+main .contact .container form .form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+    margin-bottom: 16px;
+}
+
+main .contact .container form .form-grid .form-element, main .contact .container form .form-grid .form-area {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+
+    display: block;
+    /* width: 100%; */
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 20px;
+    color: #313131
+}
+
+main .contact .container form .form-grid .form-element::placeholder, main .contact .container form .form-grid .form-area::placeholder {
+    color: #aaa
+}
+
+main .contact .container form .form-grid .form-area {
+    grid-column: span 2;
+}
+
+main .contact .container form .right-align {
+    text-align: right;
+}
