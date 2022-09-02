@@ -79,6 +79,8 @@
     /* contacts */
     main .contact .container form .form-grid {
         grid-template-columns: 1fr;
+        grid-gap: 13px;
+        margin-bottom: 13px;
     }
 
 }
