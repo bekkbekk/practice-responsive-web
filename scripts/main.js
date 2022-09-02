@@ -16,4 +16,12 @@ window.onload = function() {
         menu_btn.classList.toggle('is-active');
         mobile_nav.classList.toggle('is-active');
     });
+
+    const mobile_nav_buttons = document.querySelectorAll('.mobile-nav-button');
+    for (i = 0; i < mobile_nav_buttons.length; i++) {
+        mobile_nav_buttons[i].addEventListener('click', function() {
+            menu_btn.classList.toggle('is-active');
+            mobile_nav.classList.toggle('is-active');
+        });
+    }
 }
