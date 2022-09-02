@@ -16,6 +16,7 @@
     }
 }
 
+/* portrait */
 @media (max-width: 796px) {
 
     main .projects .project-grid {
@@ -45,12 +46,12 @@
     }
 
     main .banner .container h1 {
-        font-size: 32px;
+        font-size: 40px;
         margin-bottom: 16px;
     }
 
     main .banner .container h3 {
-        font-size: 17px;
+        font-size: 22px;
         margin-bottom: 16px;
     }
 
@@ -83,4 +84,16 @@
         margin-bottom: 13px;
     }
 
+}
+
+
+/* mobile-nav */
+@media (min-width: 767px) {
+    .hamburger {
+        display: none;
+    }
+
+    .mobile-nav {
+        opacity: 0;
+    }
 }
