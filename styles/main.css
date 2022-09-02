@@ -175,9 +175,10 @@ main .contact .container form {
 
 main .contact .container form .form-grid {
     display: grid;
+    grid-gap: 30px;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 16px;
     margin-bottom: 16px;
+    /* background-color: red; */
 }
 
 main .contact .container form .form-grid .form-element, main .contact .container form .form-grid .form-area {
@@ -190,6 +191,7 @@ main .contact .container form .form-grid .form-element, main .contact .container
     /* width: 100%; */
     background-color: #fff;
     border-radius: 8px;
+
     padding: 16px;
     font-size: 20px;
     color: #313131
@@ -200,7 +202,8 @@ main .contact .container form .form-grid .form-element::placeholder, main .conta
 }
 
 main .contact .container form .form-grid .form-area {
-    grid-column: span 2;
+    /* para yung Message box ay sakop buong column */
+    grid-column: 1/-1;
 }
 
 main .contact .container form .right-align {
